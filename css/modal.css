@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root{
+    --gray-color: #323441;
+    --black-color: #000000;
+    --white-color: #f5f5f9;
+    --copyright-color: #6d7278;
+
+    --color-gray-light: #8a9396;
+
+    --font-family-main: 'Inter', serif;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+
+    --index: calc(1vw + 1vh);
+}
+
+.modal-window {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid #000;
+    transition: .4s;
+}
+
+.body_fixed{ 
+    height: 100vh;
+    overflow-y: hidden; 
+}
+
+.modal-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-content {
+    background: var(--black-color);
+    border: 8px solid var(--color-gray-light);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 80px;
+    transition: .4s;
+    transform: translateY(0);
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+.modal-header h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    align-self: center;
+}
+
+.modal-close img {
+    width: 35px;
+    height: 35px;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.modal-close img:hover {
+    transform: rotate(180deg);
+}
+
+.modal-main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.close {
+    align-self: center;
+}
+
+.work{
+    margin-top: calc(var(--index)*1.3);
+}
+
+.col__1{
+    grid-area: col_1;
+}
+
+.col__2{
+    grid-area: col_2;
+}
+
+.col__3{
+    grid-area: col_3;
+}
+
+.col__1-2{
+    grid-area: col_1-2;
+}
+
+.col__1-3{
+    grid-area: col_1-3;
+}
+
+.cell{
+    border: 1px solid var(--color-gray-light);
+    box-shadow: 4px 4px 5px var(--white-color);
+    padding: 5px;
+}
+
+
+.fire__grid_container{
+    display: grid;
+    grid-template-areas: 
+    "col_1 col_2 col_3"
+    "col_1-2 col_1-2 col_1-3";
+}
+
+.fire__grid_container h3{
+    font-size: calc(var(--index) * 1.5);
+    font-weight: var(--font-weight-bold);
+    line-height: 133%;
+    color: var(--color-gray-light);
+}
+
+.modal-main p{
+    color: var(--color-gray-light);
+    font-size: calc(var(--index) * 1);
+    font-weight: var(--font-weight-regular);
+    line-height: 100%;
+}
+
+.modal-main li{
+    color: var(--color-gray-light);
+    font-size: var(--index);
+    font-weight: var(--font-weight-regular);
+    line-height: 100%;
+    padding: 1px;
+}
+
+.modal-main h3{
+    font-size: calc(var(--index) * 1.3);
+    font-weight: var(--font-weight-bold);
+    line-height: 133%;
+    color: var(--color-gray-light);
+    text-align: center;
+    margin-bottom: calc(var(--index));
+}
+
+.modal-main ul{
+    padding-left: 10px;
+}
+
+
+
+
+

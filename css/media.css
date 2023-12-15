@@ -1,0 +1,88 @@
+@media (hover:hover) {
+    .heading__contacts a:hover{
+        color: var(--color-gray-light);
+    }
+
+    .tabs_nav-btn:hover,
+    .more,
+    .close {
+        background-color: var(--gray-color);
+        color: var(--white-color);
+    }
+
+    
+    .tab__item_img:hover img {
+        transform: scale(0.9);
+    }
+}
+@media (max-width: 920px) {
+    .h1{
+        font-size: calc(var(--index) * 0.9);
+    }
+}
+
+@media (max-width:768px) {
+
+    .wrapper{
+        width: 95%;
+    }
+
+    .h1{
+        font-size: calc(var(--index) * 0.7);
+    }
+
+    .common_h3{
+        font-size: calc(var(--index) * 2);
+        font-weight: var(--font-weight-bold);
+    }
+
+    .common_ul{
+        font-size: calc(var(--index) * 1.5); 
+    }
+
+    .icon{
+        width: calc(var(--index) * 1.5);
+        height: calc(var(--index) * 1.5);
+    }
+
+    .heading__container{
+        flex-direction: column;
+        gap: var(--index);
+        align-items: center;
+    }
+
+    .tabs_nav {
+        gap: 5px;
+    }
+
+    .tabs_nav-btn{
+        font-size: calc(var(--index) * 0.9);
+        padding: 0 15px;
+    }
+
+    .flex-item__icon-vk{
+        padding: 16px;
+        background-image: url(../img/icon-vk_575.svg);
+    }
+    
+    .flex-item__icon-insta{
+        padding: 16px;
+        background-image: url(../img/icon-instagram_575.svg);
+    }
+    
+    .flex-item__icon-vk:hover{
+        background-image: url(../img/icon-vk-hover_575.svg);
+    }
+    
+    .flex-item__icon-insta:hover{
+        background-image: url(../img/icon-instagram-hover_575.svg);
+    }
+}
+
+@media (max-width: 400px) {
+    .icon{
+        width: calc(var(--index) * 1.2);
+        height: calc(var(--index) * 1.2);
+    }
+}
+
