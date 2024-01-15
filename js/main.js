@@ -38,12 +38,17 @@ const body = document.body;
 let modalWindowFireSafe = document.getElementById("modalWindowFireSafe");
 let close = document.querySelector(".close");
 
+
 buttonFireSafe.onclick = () => {
-  body.classList.add('body_fixed');
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${window.scrollY}px`;
   modalWindowFireSafe.classList.add('modal-show');
 }
 
 close.onclick = () => {
-  body.classList.remove('body_fixed');
+  const scrollY = document.body.style.top;
+  document.body.style.position = '';
+  document.body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
   modalWindowFireSafe.classList.remove('modal-show');
 }
