@@ -34,7 +34,7 @@ body{
 /* Общие классы */
 
 .wrapper{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -139,12 +139,13 @@ h1{
 .tabs_nav {
     display: flex;
     justify-content: center;
-    gap: 2vh;
+    flex-wrap: wrap;
+    gap: 1vh;
 }
 
 .tabs_nav-btn {
     background-color: var(--color-gray-light);
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
     line-height: 133%;
     border-radius: 100px;
