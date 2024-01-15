@@ -161,7 +161,14 @@
     padding-left: 10px;
 }
 
-
+@media (max-width:768px) {
+    .fire__grid_container{
+        grid-template-areas: 
+        "col_1 col_2"
+        "col_1-2 col_1-2"
+        "col_3 col_1-3";
+    }
+}
 
 
 
