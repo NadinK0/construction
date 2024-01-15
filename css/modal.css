@@ -43,9 +43,10 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 2vh 3vw;
+    padding: 1vh 3vw;
     transition: .4s;
-    transform: translateY(0);
+    /* transform: translateY(0); */
+    overflow-y: scroll;
 }
 
 .modal-header {
