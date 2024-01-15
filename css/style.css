@@ -138,9 +138,9 @@ h1{
 
 .tabs_nav {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
-    gap: 10px;
+    gap: 2vh;
 }
 
 .tabs_nav-btn {
@@ -149,7 +149,7 @@ h1{
     font-weight: var(--font-weight-bold);
     line-height: 133%;
     border-radius: 100px;
-    padding: 1vw 15px;
+    padding: 0.7vw 15px;
     text-shadow: 2px 2px 5px var(--gray-color);
     cursor: pointer;
     transition: 0.3s;

@@ -52,7 +52,6 @@
     }
 
     .tabs_nav {
-        gap: 5px;
         margin-bottom: 3vw;
     }
 
@@ -83,6 +82,10 @@
     .icon{
         width: calc(var(--index) * 1.2);
         height: calc(var(--index) * 1.2);
+    }
+
+    .tabs_nav {
+        flex-wrap: wrap;
     }
 }
 
