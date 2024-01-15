@@ -138,7 +138,6 @@ h1{
 
 .tabs_nav {
     display: flex;
-    max-width: 100%;
     justify-content: center;
     gap: 2vh;
 }

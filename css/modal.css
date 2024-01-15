@@ -29,11 +29,6 @@
     transition: .4s;
 }
 
-.body_fixed {
-    height: 100vh;
-    overflow-y: hidden;
-}
-
 .modal-show {
   display: flex;
   justify-content: center;
