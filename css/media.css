@@ -53,6 +53,7 @@
 
     .tabs_nav {
         margin-bottom: 3vw;
+        flex-wrap: wrap;
     }
 
     .tabs_nav-btn{
@@ -82,10 +83,6 @@
     .icon{
         width: calc(var(--index) * 1.2);
         height: calc(var(--index) * 1.2);
-    }
-
-    .tabs_nav {
-        flex-wrap: wrap;
     }
 }
 
