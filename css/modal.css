@@ -27,6 +27,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     border: 3px solid #000;
     transition: .4s;
+    overflow-y: scroll;
 }
 
 .modal-show {
@@ -37,15 +38,15 @@
 
 
 .modal-content {
-    background: var(--black-color);
-    border: 8px solid var(--color-gray-light);
-    border-radius: 5px;
+    background-image: url("../img/modal-background.jpg");
+    background-position: center;
+    border: 8px solid var(--black-color);
+    border-radius: 10px;
     width: 100%;
     height: auto;
     margin: 0 auto;
     padding: 1vh 3vw;
     transition: .4s;
-    /* transform: translateY(0); */
     overflow-y: scroll;
 }
 
@@ -74,6 +75,8 @@
 }
 
 .modal-main {
+    background-color: rgb(255 255 255 / 20%);
+    backdrop-filter: blur(5px);
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -110,8 +113,9 @@
 
 .cell{
     border: 1px solid var(--color-gray-light);
-    box-shadow: 4px 4px 5px var(--white-color);
+    box-shadow: 4px 4px 5px var(--gray-color);
     padding: 5px;
+    border-radius: 5px;
 }
 
 
@@ -126,18 +130,18 @@
     font-size: calc(var(--index) * 1.5);
     font-weight: var(--font-weight-bold);
     line-height: 133%;
-    color: var(--color-gray-light);
+    color: var(--black-color);
 }
 
 .modal-main p{
-    color: var(--color-gray-light);
+    color: var(--black-color);
     font-size: calc(var(--index) * 1);
     font-weight: var(--font-weight-regular);
     line-height: 100%;
 }
 
 .modal-main li{
-    color: var(--color-gray-light);
+    color: var(--black-color);
     font-size: var(--index);
     font-weight: var(--font-weight-regular);
     line-height: 100%;
@@ -148,7 +152,7 @@
     font-size: calc(var(--index) * 1.3);
     font-weight: var(--font-weight-bold);
     line-height: 133%;
-    color: var(--color-gray-light);
+    color: var(--black-color);
     text-align: center;
     margin-bottom: calc(var(--index));
 }
